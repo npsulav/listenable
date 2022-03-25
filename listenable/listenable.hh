@@ -15,6 +15,10 @@ private:
     list<function<void()>> listeners;
 
 public:
+// For array, list, vector,etc. Modification should be 
+// done by direct access to i and call notifyListener if the 
+// changes should be reflected in the listeners
+
     T i;
 public:
     listenable(T i);
